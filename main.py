@@ -14,7 +14,7 @@ def genPass(Length=12):
         passChars.append(secrets.choice(allBucket))
     secrets.SystemRandom().shuffle(passChars)
     return "".join(passChars)
-Len = int(input("Please enter the desires Password length: "))
+Len = int(input("Please enter the desired Password length: "))
 Password = genPass(Length=Len)
 print(Password)
 pyperclip.copy(Password)
